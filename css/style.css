@@ -1,0 +1,124 @@
+nav a:hover,
+nav a:focus {
+  text-decoration: underline;
+}
+
+.skip a {
+     position: absolute;
+     top: -40px;
+}
+
+
+.skip a:focus {
+     top: 20px;
+   }
+
+*:focus {
+     outline: 2px solid #007BFF;
+   }
+
+body{
+    background-color: lightgrey;
+}
+
+nav{
+    background-color: lightgrey;
+}
+
+/* nav ul li {
+    color: white;
+} */
+   .gallery {
+    background-color: whitesmoke;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+}
+
+.gallery *{
+    width: 35%;
+    margin: 20px 0px 20px 0px;
+}
+
+
+#icon {
+    grid-column: 1/2;
+}
+
+@media screen and (min-width: 700px)
+  {
+    .gallery {
+        background-color: whitesmoke;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        justify-items: center;
+    }
+
+    .gallery *{
+        width: 45%;
+        margin: 20px 15px 20px 15px;
+    }
+
+    #icon:nth-child(odd) {
+        grid-column: 1/2;
+        }
+
+    #icon:nth-child(even) {
+        grid-column: 2/3;
+    }
+
+  }
+
+  @media screen and (min-width: 900px)
+  {
+    .gallery {
+        background-color: whitesmoke;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        justify-items: center;
+    }
+
+    .gallery *{
+        width: 60%;
+        margin: 20px 45px 20px 45px;
+    }
+
+    #icon:nth-child(odd) {
+        grid-column: 1/3;
+        }
+
+    #icon:nth-child(even) {
+        grid-column: 3/4;
+    }
+    #icon:hover{
+        border: 45px dashed blue;
+    }
+
+  }
+
+  @media screen and (min-width: 1100px)
+  {
+    .gallery {
+        background-color: whitesmoke;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        justify-items: center;
+    }
+    .gallery *{
+        width: 70%;
+        margin: 20px 80px 20px 80px;
+    }
+
+    #icon:nth-child(odd) {
+        grid-column: 1/3;
+    }
+
+    #icon:nth-child(even) {
+        grid-column: 3/4;
+    }
+
+    #icon:hover{
+        border: 45px dashed blue;
+    }
+
+  }
