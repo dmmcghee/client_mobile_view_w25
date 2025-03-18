@@ -45,6 +45,14 @@ nav{
     grid-column: 1/2;
 }
 
+footer{
+    background-color: whitesmoke;
+    color: black;
+    padding-top: 30px;
+    text-align: center;
+  }
+  
+
 @media screen and (min-width: 700px)
   {
     .gallery {
